@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+        <script>
+            zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        </script>
+        <style>
+            html, body,
+            #myChart {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='myChart'></div>
+        <script>
+            zingchart.render({
+                id: 'myChart',
+                title: {
+                    visible: true,
+                    "font-color": "black",
+                    "font-family": 'Exo 2, sans-serif',
+                    "text": "HI",
+                    "background-color": "transparent",
+                    "font-size": "15",
+                    height: "10%",
+                    textAlign: "center"
+                },
+                data: {
+                    type: "chord",
+                    "options": {
+                        "angle-padding": 2
+                    },
+                    "series": [{
+                            "values": [11975,  5871, 8916, 2868]
+                           
+                        }, {
+                            "values": [1951, 10048, 2060, 6171]
+                            
+                        }, {
+                            "values": [8010, 16145, 8090, 8045]
+                            
+                        }, {
+                            "values": [1013,   990,  940, 6907]
+                           
+                        }]},
+                height: "100%",
+                width: "100%",
+            });
+        </script>
+    </body>
+</html>

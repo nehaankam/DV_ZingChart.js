@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+        <script>
+            zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        </script>
+        <style>
+            html, body,
+            #myChart {
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='myChart'></div>
+        <script>
+            zingchart.render({
+                id: 'myChart',
+                title: {
+                    visible: true,
+                    "font-color": "black",
+                    "font-family": 'Exo 2, sans-serif',
+                    "text": "HI",
+                    "background-color": "transparent",
+                    "font-size": "15",
+                    height: "10%",
+                    textAlign: "center"
+                },
+                data: {
+                    type: "chord",
+                    "options": {
+                        "angle-padding": 2
+                    },
+                    "series": [{
+                            "values": [, 5, 10, 3, 6],
+                            "text": "Tom"
+                        }, {
+                            "values": [ 7,, 7, 2, 8],
+                            "text": "John"
+                        }, {
+                            "values": [ 6, 8,, 0, 5],
+                            "text": "Fedrick"
+                        },{
+                            "values": [ 7, 8, 9,, 7],
+                            "text": "Messy"
+                        }, {
+                            "values": [ 5, 7, 8, 3,],
+                            "text": "Pat"
+                        }]},
+                height: "100%",
+                width: "100%",
+            });
+        </script>
+    </body>
+</html>
